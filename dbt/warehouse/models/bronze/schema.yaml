@@ -1,0 +1,44 @@
+version: 2
+
+sources:
+  - name: app
+    database: postgres
+    schema: app
+    freshness:
+      warn_after: {count: 1, period: day}
+      error_after: {count: 2, period: day}
+    loaded_at_field: created_at
+    tables:
+      - name: my_table
+        columns:
+          - name: id
+            description: "The primary key for this table"
+            data_tests:
+              - unique
+              - not_null
+          - name: created_at
+            description: "The primary key for this table"
+            data_tests:
+              - not_null
+          - name: data
+            description: "The primary key for this table"
+
+
+
+models:
+  - name: app
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+      - name: created_at
+        description: "The primary key for this table"
+        data_tests:
+          - not_null
+      - name: data
+        description: "The primary key for this table"
+      - name: last_updated_at
+      - name: batch_uuid

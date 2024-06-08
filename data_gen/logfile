@@ -1,0 +1,10 @@
+2024-06-06 08:11:05.925 AEST [3334] LOG:  starting PostgreSQL 14.12 (Homebrew) on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.202), 64-bit
+2024-06-06 08:11:05.926 AEST [3334] LOG:  listening on IPv6 address "::1", port 5432
+2024-06-06 08:11:05.926 AEST [3334] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-06-06 08:11:05.926 AEST [3334] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2024-06-06 08:11:05.929 AEST [3335] LOG:  database system was shut down at 2024-06-06 08:10:25 AEST
+2024-06-06 08:11:05.931 AEST [3334] LOG:  database system is ready to accept connections
+2024-06-07 15:58:23.524 AEST [3334] LOG:  received smart shutdown request
+2024-06-07 15:58:23.527 AEST [3334] LOG:  background worker "logical replication launcher" (PID 3341) exited with exit code 1
+2024-06-07 15:58:23.530 AEST [3336] LOG:  shutting down
+2024-06-07 15:58:23.547 AEST [3334] LOG:  database system is shut down

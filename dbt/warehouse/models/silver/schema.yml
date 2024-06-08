@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: events
+    description: "A starter dbt model"
+    columns:
+      - name: message
+        type: string
+        description: "The message for this event"
+        data_tests:
+          - not_null
+      - name: id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+      - name: created_at
+        description: "The primary key for this table"
+        data_tests:
+          - not_null
+      - name: data
+        description: "The primary key for this table"
